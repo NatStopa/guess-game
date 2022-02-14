@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: block;
+  margin: 60px auto;
+  max-width: 40rem;
+  text-align: center;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+.choices div {
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 20px 0;
+  width: 230px;
+}
+
+.choices .choice-preview {
+  font-size: 35px;
+  margin: 0;
+}
+
+.choose button {
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+}
