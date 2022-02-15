@@ -37,12 +37,13 @@ h1 {
 }
 
 .choose-form input {
-  background-color: transparent;
-  border: 4px solid #fcdf7f;
-  color: #fcdf7f;
+  background-color: #fcdf7f;
+  border: 4px inset #fef2cc;
+  color: #822a7e;
   font-family: "Press Start 2P", cursive;
   font-size: 16px;
   height: 34px;
+  padding-left: 10px;
   width: 50px;
 }
 
@@ -50,10 +51,15 @@ h1 {
   background-color: #fcdf7f;
   border: 4px outset #fef2cc;
   color: #822a7e;
+  cursor: pointer;
   font-family: "Press Start 2P", cursive;
   font-size: 16px;
   margin-left: 10px;
   padding: 10px;
+}
+
+.choose-form button:hover {
+  border: 4px inset #fef2cc;
 }
 
 .choose-label-div {
@@ -63,4 +69,48 @@ h1 {
 
 .result {
   font-size: 25px;
+}
+
+@media (max-width: 710px) {
+  h1 {
+    font-size: 30px;
+  }
+  .app {
+    margin: 40px auto;
+    padding: 10px;
+  }
+  .choices div {
+    font-size: 12px;
+    width: 180px;
+  }
+  .choices .choice-preview {
+    font-size: 20px;
+  }
+  .choose-label-div {
+    font-size: 18px;
+  }
+  .result {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .choices {
+    display: block;
+  }
+  .choices div {
+    font-size: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 160px;
+  }
+  .choices .choice-preview {
+    font-size: 16px;
+  }
+  .choose-label-div {
+    font-size: 15px;
+  }
+  .result {
+    font-size: 15px;
+  }
 }
