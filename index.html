@@ -5,21 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <title>Guess Game</title>
   </head>
   <body>
     <div class="app">
       <h1>Guess game</h1>
       <form class="choose-form">
-        <label for="choose-input">Choose number from 1 to 10</label>
-        <input
-          type="number"
-          name="choose-input"
-          id="choose-input"
-          min="1"
-          max="10"
-        />
-        <input type="submit" value="Choose" id="choose-button" />
+        <div class="choose-label-div">
+          <label for="choose-input">Choose number from 1 to 10</label>
+        </div>
+        <div>
+          <input
+            type="number"
+            name="choose-input"
+            id="choose-input"
+            min="1"
+            max="10"
+          />
+          <button type="submit" id="choose-button">Choose</button>
+        </div>
       </form>
       <div class="choices">
         <div class="your-choice-section">
