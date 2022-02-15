@@ -95,6 +95,9 @@ h1 {
 }
 
 @media (max-width: 360px) {
+  .app {
+    margin: 20px auto;
+  }
   .choices {
     display: block;
   }
@@ -117,6 +120,15 @@ h1 {
 
 @media (max-width: 360px) {
   h1 {
-    font-size: 20px;
+    font-size: 25px;
+  }
+  .choose-form input {
+    height: 25px;
+    width: 40px;
+  }
+  .choose-form button {
+    font-size: 12px;
+    padding: 10px;
+    padding-top: 13px;
   }
 }
