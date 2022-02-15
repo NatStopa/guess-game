@@ -39,6 +39,7 @@ h1 {
 .choose-form input {
   background-color: #fcdf7f;
   border: 4px inset #fef2cc;
+  border-radius: none;
   color: #822a7e;
   font-family: "Press Start 2P", cursive;
   font-size: 16px;
@@ -121,6 +122,9 @@ h1 {
 @media (max-width: 360px) {
   h1 {
     font-size: 25px;
+  }
+  .choices {
+    margin: 25px;
   }
   .choose-form input {
     height: 25px;
