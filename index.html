@@ -10,19 +10,17 @@
   <body>
     <div class="app">
       <h1>Guess game</h1>
-      <div class="choose">
-        <h2>Choose number from 1 to 10</h2>
-        <button id="one">1</button>
-        <button id="two">2</button>
-        <button id="three">3</button>
-        <button id="four">4</button>
-        <button id="five">5</button>
-        <button id="six">6</button>
-        <button id="seven">7</button>
-        <button id="eight">8</button>
-        <button id="nine">9</button>
-        <button id="ten">10</button>
-      </div>
+      <form class="choose-form">
+        <label for="choose-input">Choose number from 1 to 10</label>
+        <input
+          type="number"
+          name="choose-input"
+          id="choose-input"
+          min="1"
+          max="10"
+        />
+        <input type="submit" value="Choose" id="choose-button" />
+      </form>
       <div class="choices">
         <div class="your-choice-section">
           <p>YOUR CHOICE</p>
@@ -33,13 +31,10 @@
           <p id="computer-choice-preview" class="choice-preview">?</p>
         </div>
       </div>
-      <div class="hint">
-        <p id="hint"></p>
-      </div>
       <div class="result">
-        <p id="message"></p>
+        <p id="result"></p>
       </div>
     </div>
-    <script src=""></script>
+    <script src="guess-game.js"></script>
   </body>
 </html>
